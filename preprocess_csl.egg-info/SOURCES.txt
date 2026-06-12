@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+setup.py
+preprocess_csl/__init__.py
+preprocess_csl/text_preprocess.py
+preprocess_csl.egg-info/PKG-INFO
+preprocess_csl.egg-info/SOURCES.txt
+preprocess_csl.egg-info/dependency_links.txt
+preprocess_csl.egg-info/requires.txt
+preprocess_csl.egg-info/top_level.txt
+preprocess_csl/data/contractions.json

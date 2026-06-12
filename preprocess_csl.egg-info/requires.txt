@@ -1,0 +1,4 @@
+spacy==3.8.13
+textblob==0.20.0
+beautifulsoup4>=4.13.5
+nltk==3.9.2
