@@ -4,6 +4,7 @@ import os
 import json
 import re
 
+import nltk
 import spacy
 import unicodedata
 from bs4 import BeautifulSoup  
@@ -17,6 +18,14 @@ nlp = spacy.load('en_core_web_sm')
 
 fpath = os.path.join(os.path.dirname(__file__), "data/contractions.json")
 contractions = json.load(open(fpath))
+
+def download_nltk_data():
+    nltk.download('stopwords')
+    nltk.download('averaged_perceptron_tagger')
+    nltk.download('tagsets')
+    nltk.download('wordnet')
+    nltk.download('maxent_ne_chunker')
+    nltk.download('punkt')
 
 def word_count(text):
     """Counts the number of words in a given text."""
